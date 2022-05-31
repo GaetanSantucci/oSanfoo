@@ -1,3 +1,16 @@
-@entrypoint = 'http://localhost:9000'
+@entrypoint = http://localhost:9000
 
-GET {{entrypoint}}
+GET {{entrypoint}}/users
+
+###
+GET {{entrypoint}}/users/1
+
+###
+POST {{entrypoint}}/signup
+Content-type: application/json
+
+{
+   "username": "gtn",
+   "email": "gtn@gtn.com",
+   "password": "gtn"
+}
