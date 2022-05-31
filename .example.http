@@ -1,0 +1,3 @@
+@entrypoint = 'http://localhost:9000'
+
+GET {{entrypoint}}
