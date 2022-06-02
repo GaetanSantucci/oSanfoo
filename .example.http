@@ -3,14 +3,16 @@
 GET {{entrypoint}}/users
 
 ###
-GET {{entrypoint}}/users/1
+GET {{entrypoint}}/users/3
 
 ###
 POST {{entrypoint}}/signup
 Content-type: application/json
 
 {
-   "username": "gtn",
-   "email": "gtn@gtn.com",
-   "password": "gtn"
+   "username": "test",
+   "email": "test@test.com",
+   "password": "testtest",
+   "passwordConfirm": "testtest",
+   "role_id": 2
 }
